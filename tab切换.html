@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tab切换</title>
+
+	<style type="text/css" media="screen">
+		*{margin: 0; padding: 0;}
+		ul,li{list-style: none;}
+		body{background: #323232; font-size: 12px; font-family: "微软雅黑"; padding: 100px;}
+		.tabWrap{width: 400px;}
+		.tabWrap .tab-nav{height: 40px;}
+		.tabWrap .tab-nav li{float: left; margin-right: 10px; background: #767676; border-radius: 3px 3px 0 0;}
+		.tabWrap .tab-nav li a{display: block; height: 40px; line-height: 40px; padding: 0 20px; color: #fff; text-decoration: none;}
+		.tabWrap .tab-nav li.actived{background: #fff;}
+		.tabWrap .tab-nav li.actived a{color: #777;}
+		.tabWrap .content-wrap{background: #fff; height: 260px; padding: 5px;}
+		.tabWrap .content-wrap .content-item{display: none; height: 260px; position: absolute;}
+		.tabWrap .content-wrap .content-item.current{display: block;}
+		.tabWrap .content-wrap img{height: 260px; width: 390px;}
+	</style>
+</head>
+<body>
+	
+	<div class="tabWrap">
+		
+		<ul class="tab-nav">
+			<li><a href="javascript:;">新闻</a></li>
+			<li><a href="javascript:;">电影</a></li>
+			<li><a href="javascript:;">娱乐</a></li>
+			<li><a href="javascript:;">体育</a></li>
+			<li><a href="javascript:;">财经</a></li>
+		</ul>
+
+		<div class="content-wrap">
+			<div class="content-item">
+				<img src="img/kobe1.jpg" alt="">
+			</div>
+			<div class="content-item">
+				<img src="img/kobe2.jpg" alt="">
+			</div>
+			<div class="content-item">
+				<img src="img/kobe3.jpg" alt="">
+			</div>
+			<div class="content-item">
+				<img src="img/kobe4.jpg" alt="">
+			</div>
+			<div class="content-item">
+				<img src="img/kobe5.jpg" alt="">
+			</div>
+		</div>
+	</div>
+
+	
+	
+
+	<script type="text/javascript" src='js/jquery-3.1.1.min.js'></script>
+	<script type="text/javascript" src='js/tab.js'></script>
+	<script type="text/javascript">
+		
+
+		var tab1 = new Tab('.tabWrap', {
+			triggerType: "click",
+			effect: "fade",
+			invoke: 2,
+			auto: 3000
+		});
+
+		
+	</script>
+
+</body>
+</html>
