@@ -50,7 +50,6 @@
 
 		//保存tab标签列表以及对应的内容
 		s.tabItems = s.tab.find('.tab-nav li');
-		
 		s.contentItems = s.tab.find('.content-wrap .content-item');
 
 		//设置默认显示位置
