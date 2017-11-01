@@ -6,7 +6,7 @@
 
 	var Tab = function(container, params) {
 
-		if (!(this instanceof Tab)) return Tab(container, params);
+		if (!(this instanceof Tab)) return new Tab(container, params);
 
 		//默认配置参数
 		var defaults = {
